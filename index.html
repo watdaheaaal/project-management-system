@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals / Project Management System</title>
+    <link rel="stylesheet" href="./styles.css/styles.css"> 
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar_container">
+        <div class="logo">
+            <img src="./img/project-management_11331653.png" alt="">
+        </div>
+        <h1>Turceno Co.</h1>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <div class="dark_mode">
+            <box-icon name='moon' ></box-icon>
+        </div>
+    </div>
+    <div id="InputField">
+        <h1>Project Management System</h1>
+        <form action="#" method="post" id="projectForm">
+            <div class="form-group">
+                <label for="projectName">Enter your project name:</label><br> 
+                <input type="text" name="projectName" id="projectName" placeholder="Enter project name" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="taskAdd">Add task:</label><br>
+                <input type="text" name="taskAdd" id="taskAdd" placeholder="Name of task" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="memberName">Assigned Members:</label><br>
+                <input type="text" name="memberName" id="memberName" placeholder="Enter assigned person" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="deadline">Deadline: (date and time):</label><br>
+                <input type="datetime-local" id="deadline" name="deadline" required><br>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+    </div>
+<br>
+<br>
+
+    <div id="output">
+        <h1>Output</h1>
+        <table style="width:100%" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Project Name</th>
+                    <th>Task</th>
+                    <th>Assigned Members</th>
+                    <th>Deadline</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="projectTableBody">
+
+            </tbody>
+        </table>
+    </div>
+    <section>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+    <div class="footer">
+        <p>Copyright © 2024 Turceno Co. All rights reserved.</p>
+        <box-icon name='envelope' type='solid'></box-icon>
+        <box-icon name='instagram' type='logo'></box-icon>
+        <box-icon type='logo' name='facebook'></box-icon>
+        <box-icon type='logo' name='github'></box-icon>
+        <box-icon type='logo' name='discord-alt'></box-icon>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
